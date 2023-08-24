@@ -4,6 +4,7 @@ from srt import Subtitle
 import srt
 import ffmpeg
 from deep_translator import GoogleTranslator
+import youtube_dl
 from yt_dlp import YoutubeDL
 import os
 import torch
@@ -12,10 +13,10 @@ import torch
 from janome.tokenizer import Tokenizer
 
 
+
 t = Tokenizer()
 
 
-url = "https://www.youtube.com/watch?v=Qd-jJjduWeQ&t=4s"
 
 file_name = "tkinker2"
 file_path = file_name + ".mp4"
@@ -151,22 +152,6 @@ def translate(url ,path,booltrans):
     return 0
 
 
-# def add_line(s):
-#     new_s = s
-#     s_count = len(s)
-#     s_max_count = 30
-#     count = 1
-#     while s_count >= s_max_count * count:
-#         # if (s_count - s_max_count) >= 3:
-#         print(count)
-#             # 15文字以上、かつ、2行目が3文字以上あれば、改行する
-#             # つまり、18文字以上であれば、15文字で改行する
-#         s = s[:s_max_count * count] + "\n" + s[s_max_count * count:]
-#         count += 1
-#     print(s)
-#     return s
-
-from janome.tokenizer import Tokenizer
 
 def add_line(s):
     new_s = s

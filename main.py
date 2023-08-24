@@ -9,7 +9,7 @@ import translate
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/Users/nowhereman/Desktop/testGui/build/assets/frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./testGui/build/assets/frame0")
 
 
 def dirdialog_clicked(entry_2):
