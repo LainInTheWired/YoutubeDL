@@ -4,7 +4,6 @@ from srt import Subtitle
 import srt
 import ffmpeg
 from deep_translator import GoogleTranslator
-import youtube_dl
 from yt_dlp import YoutubeDL
 import os
 import torch

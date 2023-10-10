@@ -1,0 +1,7 @@
+openai-whisper==20230124
+yt-dlp 
+pyinstaller 
+
+srt
+deep_translator
+janome
